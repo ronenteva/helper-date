@@ -16,7 +16,7 @@ module.exports = function dateHelper(str, pattern, options) {
   var opts = Object.assign({}, this, defaults, options, options.hash);
 
   // set the language to use
-  moment.locale(opts.lang);
+  moment.locale(opts.language);
 
   if (opts.datejs === false) {
     return moment(new Date(str)).format(pattern);
